@@ -1,0 +1,8 @@
+bdf-unifont
+discord-canary
+gegl-git
+i3-focus-last-git
+simplescreenrecorder
+ttf-twemoji
+ttf-unifont
+yaah

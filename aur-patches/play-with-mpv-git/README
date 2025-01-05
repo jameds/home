@@ -1,0 +1,7 @@
+10-pkgbuild-yt-dlp.diff
+20-yt-dlp.diff
+
+patch < 10-pkgbuild-yt-dlp.diff
+makepkg -si
+
+This patches the PKGBUILD and play-with-mpv code to use yt-dlp instead of youtube-dl.

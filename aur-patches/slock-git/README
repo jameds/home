@@ -1,0 +1,4 @@
+10-pwless.diff
+
+Copy this file to the patches directory and it will automatically patch.
+Press Windows (Mod4) + Enter to unlock the screen, simple protection against clumsiness.

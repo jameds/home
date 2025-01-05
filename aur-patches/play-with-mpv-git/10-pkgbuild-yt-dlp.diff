@@ -1,0 +1,22 @@
+--- PKGBUILD
++++ PKGBUILD
+@@ -9,7 +9,7 @@
+ arch=('any')
+ url='https://github.com/Thann/play-with-mpv'
+ license=('Unlicense')
+-depends=('python' 'python-wheel' 'python-pip' 'youtube-dl' 'mpv')
++depends=('python' 'python-wheel' 'python-pip' 'yt-dlp' 'mpv')
+ optdepends=('peerflix' 'mkchromecast')
+ makedepends=('git' 'python-setuptools')
+ provides=('play-with-mpv')
+@@ -22,6 +22,10 @@
+   echo "$(python setup.py --version | tail -n1)"
+ }
+ 
++prepare() {
++  patch -d "$pkgname" -p1 -s -i "$BUILDDIR/20-yt-dlp.diff"
++}
++
+ package() {
+   cd "$pkgname"
+   python setup.py install --root="$pkgdir/" --optimize=1

@@ -1,0 +1,14 @@
+Install essential plugins:
+
+https://github.com/gorhill/uBlock?tab=readme-ov-file#firefox
+https://github.com/philc/vimium?tab=readme-ov-file
+https://github.com/passff/passff?tab=readme-ov-file
+https://github.com/passff/passff-host?tab=readme-ov-file#installation
+https://github.com/alesar1/play-with-mpv
+https://aur.archlinux.org/packages/play-with-mpv-git
+
+Remember to restart Firefox for passff-host to take effect.
+
+Install play-with-mpv using the desktop file, systemd service DOES NOT WORK.
+
+Remember to set Downloads directory to "~/net".

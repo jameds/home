@@ -1,0 +1,2 @@
+i7z (for intel cpu)
+xorg-xev

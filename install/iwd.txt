@@ -1,0 +1,28 @@
+Run iwctl to enter iwd shell.
+
+  iwctl
+
+Inside iwctl shell:
+
+  # Ensure Powered on and Mode station.
+  device wlan0 show
+
+  # (Optional) May need to power on.
+  device wlan0 set-property Powered on
+
+  # Scan networks and print them out.
+  station wlan0 scan
+  station wlan0 get-networks
+
+  # Connect to Wi-Fi and confirm status.
+  station wlan0 connect "NETWORK_NAME"
+  station wlan0 show
+
+---
+
+Run tests, IPv4, IPv6, DNS resolution:
+
+  ping 8.8.8.8
+  ping 2600::
+  ping google.com
+  aria2c --dry-run https://www.google.com/

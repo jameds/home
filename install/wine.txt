@@ -1,0 +1,9 @@
+Create WINE folder:
+
+  WINEARCH=win64 winecfg
+
+Increase font size in WINE:
+
+  wine regedit
+
+Edit for HKEY_CURRENT_CONFIG\Software\Fonts\LogPixels

@@ -1,0 +1,8 @@
+Enable multilib repository, add this to /etc/pacman.conf:
+
+  [multilib]
+  Include = /etc/pacman.d/mirrorlist
+
+Update pacman database and install Steam:
+
+  pacman -Sy steam lib32-mesa ttf-liberation

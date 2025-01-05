@@ -1,0 +1,30 @@
+diff --git a/play_with_mpv.py b/play_with_mpv.py
+index b03ee9e..4540de4 100755
+--- a/play_with_mpv.py
++++ b/play_with_mpv.py
+@@ -82,10 +82,10 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler, CompatibilityMixin):
+                 self.respond(400, msg)
+             else:
+                 try:
+-                    pipe = Popen(['youtube-dl', urls, '-o', location] +
++                    pipe = Popen(['yt-dlp', urls, '-o', location] +
+                                  query.get('ytdl_args', []))
+                 except FileNotFoundError as e:
+-                    missing_bin('youtube-dl')
++                    missing_bin('yt-dlp')
+                 self.respond(200, "downloading...")
+         else:
+             self.respond(400)
+diff --git a/setup.py b/setup.py
+index d33d286..42d9637 100755
+--- a/setup.py
++++ b/setup.py
+@@ -41,7 +41,7 @@ setup(
+     ],
+ 
+     py_modules=["play_with_mpv"],
+-    install_requires=['wheel', 'youtube-dl'],
++    install_requires=['wheel', 'yt-dlp'],
+     entry_points={
+         'gui_scripts': [
+             'play-with-mpv=play_with_mpv:start',
