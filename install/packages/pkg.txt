@@ -20,6 +20,7 @@ gvim
 i3-wm
 i3blocks
 iwd
+lftp
 linux
 linux-firmware
 lvm2
@@ -43,6 +44,7 @@ poppler-glib
 python
 python-pip
 radeontop
+rsync
 rxvt-unicode
 screen
 scrot
