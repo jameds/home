@@ -1,0 +1,116 @@
+#
+# Font
+#
+font pango:Source Code Pro Semibold 12
+set $dmenu_font "Source Code Pro Semibold-12"
+
+#
+# Use the Windows key
+#
+set $m Mod4
+floating_modifier $m
+
+#
+# Workspaces
+#
+include ~/.config/i3/workspaces.conf
+
+#
+# Window borders
+#
+default_border normal 6
+for_window [floating] border normal 3
+hide_edge_borders both
+for_window [con_mark="_noborder"] border pixel 4
+
+#
+# Navigation behavior
+#
+workspace_auto_back_and_forth no
+workspace_layout tabbed
+# Don't let a window steal focus, mark it as urgent instead
+focus_on_window_activation urgent
+
+#
+# Focus application
+#
+for_window [class="^discord$"] mark discord
+for_window [class="^URxvt$" instance="^music$"] mark music
+bindsym $m+i [con_mark="discord"] focus
+bindsym $m+o [con_mark="music"] focus
+
+#
+# Navigation commands
+#
+bindsym $m+r       reload
+bindsym $m+Shift+r restart
+bindsym $m+Escape  exec --no-startup-id slock
+
+bindsym $m+Shift+q kill
+
+bindsym $m+w layout toggle tabbed stacking
+bindsym $m+e layout toggle split
+
+bindsym $m+h split horizontal
+bindsym $m+v split vertical
+
+bindsym $m+u   focus parent
+bindsym $m+d   focus child
+bindsym $m+Tab focus mode_toggle
+bindsym $m+q   exec i3-focus-last
+
+bindsym $m+j         focus left
+bindsym $m+k         focus down
+bindsym $m+l         focus up
+bindsym $m+semicolon focus right
+
+bindsym $m+grave floating toggle
+bindsym $m+f   fullscreen toggle
+
+bindsym $m+Shift+j     move  left  5 ppt
+bindsym $m+Shift+k     move  down  5 ppt
+bindsym $m+Shift+l     move  up    5 ppt
+bindsym $m+Shift+colon move  right 5 ppt
+
+#
+# Resize mode
+#
+set $d_resize "Resize"
+set $rs_px 90
+mode $d_resize {
+	bindsym semicolon resize shrink left $rs_px; resize shrink right $rs_px
+	bindsym j         resize grow left $rs_px; resize grow right $rs_px
+
+	bindsym l         resize shrink up $rs_px; resize shrink down $rs_px
+	bindsym k         resize grow up $rs_px; resize grow down $rs_px
+
+	bindsym Escape mode default
+}
+bindsym $m+s mode $d_resize
+
+#
+# Per application settings and launcher
+#
+include ~/.config/i3/apps.conf
+
+#
+# Status bar
+#
+bar {
+	font pango:Source Code Pro Semibold 11
+
+	status_command i3blocks
+	mode hide
+
+	# My current is clipped at the edges
+	# This helps make tray icons more visible
+	tray_padding 4
+}
+
+#
+# Autostart
+#
+exec dex -ae i3
+exec_always i3-focus-last server
+exec ~/sh/xinit-xset.sh
+exec ~/.config/i3/get-layout.sh

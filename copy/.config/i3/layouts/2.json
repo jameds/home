@@ -1,0 +1,22 @@
+{
+    "type": "con",
+    "layout": "tabbed",
+    "nodes": [
+        {
+            "type": "con",
+            "swallows": [
+                {
+                    "class": "^URxvt$"
+                }
+            ]
+        },
+        {
+            "type": "con",
+            "swallows": [
+                {
+                    "class": "^firefox$"
+                }
+            ]
+        }
+    ]
+}

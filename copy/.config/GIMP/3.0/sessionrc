@@ -1,0 +1,97 @@
+# GIMP sessionrc
+# 
+# This file takes session-specific info (that is info, you want to keep
+# between two GIMP sessions).  You are not supposed to edit it manually, but
+# of course you can do.  The sessionrc will be entirely rewritten every time
+# you quit GIMP.  If this file isn't found, defaults are used.
+
+(session-info "toplevel"
+    (factory-entry "gimp-empty-image-window")
+    (position 200 100)
+    (size 640 480))
+(session-info "toplevel"
+    (factory-entry "gimp-single-image-window")
+    (position 0 26)
+    (size 1920 1054)
+    (open-on-exit)
+    (aux-info
+        (left-docks-width "0")
+        (right-docks-width "454")
+        (maximized "yes"))
+    (gimp-toolbox
+        (side right)
+        (book
+            (current-page 0)
+            (dockable "gimp-color-editor"
+                (tab-style preview)
+                (aux-info
+                    (current-page "ColorselWheel")))
+            (dockable "gimp-tool-options"
+                (tab-style icon)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-brush-list"
+                (tab-style preview)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-image-list"
+                (tab-style icon)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-document-list"
+                (tab-style icon)
+                (aux-info
+                    (show-button-bar "true"))))
+        (book
+            (position 414)
+            (current-page 0)
+            (dockable "gimp-layer-list"
+                (tab-style icon)
+                (preview-size 32)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-dynamics-list"
+                (tab-style preview)
+                (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-dynamics-editor"
+                (tab-style icon)
+                (aux-info
+                    (edit-active "true")
+                    (current-data "Eraser"))))))
+(session-info "toplevel"
+    (factory-entry "gimp-image-new-dialog")
+    (position 601 0))
+(session-info "toplevel"
+    (factory-entry "gimp-preferences-dialog")
+    (position 353 219)
+    (size 1041 531))
+(session-info "toplevel"
+    (factory-entry "gimp-keyboard-shortcuts-dialog")
+    (position 317 1)
+    (size 801 867))
+(session-info "toplevel"
+    (factory-entry "gimp-input-devices-dialog")
+    (position 0 261))
+(session-info "toplevel"
+    (factory-entry "gimp-file-save-dialog")
+    (position 147 126)
+    (size 840 498))
+(session-info "toplevel"
+    (factory-entry "gimp-operation-tool-dialog")
+    (position 1055 0))
+(session-info "toplevel"
+    (factory-entry "gimp-file-export-dialog")
+    (position 348 342)
+    (size 840 486))
+(session-info "toplevel"
+    (factory-entry "gimp-threshold-tool-dialog")
+    (position 1049 199))
+
+(hide-docks no)
+(single-window-mode yes)
+(show-tabs yes)
+(tabs-position 0)
+(last-tip-shown 0)
+
+# end of sessionrc

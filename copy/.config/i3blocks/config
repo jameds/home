@@ -1,0 +1,30 @@
+# vim: ft=dosini
+
+separator=false
+separator_block_width=2
+align=center
+markup=pango
+
+[wifi]
+command=awk -f ~/.config/i3blocks/wifi.awk /proc/net/wireless
+interval=5
+
+[disk-home]
+command=df -k --output=target,used,pcent,avail /home|awk -f ~/.config/i3blocks/disk.awk
+interval=5
+
+[cpu-temp]
+command=awk -F ' {2,}' -f ~/.config/i3blocks/i5-12400f.awk <(sensors) <(cat /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_cur_freq)
+interval=2
+
+[mem]
+command=free|awk -f ~/.config/i3blocks/mem.awk
+interval=2
+
+[load]
+command=awk -v LOAD_LIMIT=6 -f ~/.config/i3blocks/load.awk /proc/loadavg
+interval=1
+
+[time]
+command=date '+ %a, %d %b %Y  %H:%M '
+interval=5

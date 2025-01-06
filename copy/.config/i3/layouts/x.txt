@@ -1,0 +1,2 @@
+exec discord-canary
+exec vterm.sh -name music -cd ~/music

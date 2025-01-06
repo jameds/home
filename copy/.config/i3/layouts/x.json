@@ -1,0 +1,25 @@
+{
+    "type": "con",
+    "layout": "tabbed",
+    "nodes": [
+        {
+            "type": "con",
+            "marks": ["discord"],
+            "swallows": [
+                {
+                    "class": "^Discord$"
+                }
+            ]
+        },
+        {
+            "type": "con",
+            "marks": ["music"],
+            "swallows": [
+                {
+                    "class": "^URxvt$",
+                    "instance": "^music$"
+                }
+            ]
+        }
+    ]
+}
