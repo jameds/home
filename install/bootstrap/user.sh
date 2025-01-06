@@ -5,4 +5,4 @@ if [ "$(id -u)" -eq 0 ]; then
 fi
 set -e
 cd "$(dirname "$0")"
-awk -f _collect.awk user.d/*.sh | sh
+. <(awk -f _collect.awk user.d/*.sh)
