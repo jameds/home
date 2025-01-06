@@ -21,4 +21,6 @@
 + /.bashrc
 + /.vimrc
 + /sh/***
++ /data/
++ /data/dpad.Xmodmap
 - /**
