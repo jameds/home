@@ -20,6 +20,7 @@ gvim
 i3-wm
 i3blocks
 iwd
+jq
 lftp
 linux
 linux-firmware
@@ -41,6 +42,7 @@ pipewire
 pipewire-audio
 pipewire-pulse
 poppler-glib
+pwgen
 python
 python-pip
 radeontop
@@ -49,6 +51,7 @@ rxvt-unicode
 screen
 scrot
 smartmontools
+sshpass
 texinfo
 tree
 unzip
