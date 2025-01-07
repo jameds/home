@@ -16,6 +16,7 @@
 + /.config/mpv/mpv.conf
 + /.config/mpv/input.conf
 + /.config/yt-dlp/***
++ /.config/user-dirs.dirs
 + /.Xresources
 + /.xinitrc
 + /.bashrc
