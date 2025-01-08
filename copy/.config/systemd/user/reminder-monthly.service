@@ -3,7 +3,7 @@ Description=Parse ~/data/monthly.txt to ~/data/todo.txt
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c 'repeat-alarm.sh ~/data/monthly.txt ~/data/todo.txt'
+ExecStart=/bin/sh -lc '. ~/.bashrc && repeat-alarm.sh ~/data/monthly.txt ~/data/todo.txt'
 
 [Install]
 WantedBy=default.target
