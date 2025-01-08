@@ -1,0 +1,9 @@
+[Unit]
+Description=Run data/todo.txt
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'run-todo.sh ~/data/todo.txt'
+
+[Install]
+WantedBy=default.target

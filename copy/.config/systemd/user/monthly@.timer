@@ -1,0 +1,10 @@
+[Unit]
+Description=Monthly Timer for %i service
+
+[Timer]
+OnCalendar=monthly
+Persistent=true
+Unit=%i.service
+
+[Install]
+WantedBy=default.target
