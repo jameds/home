@@ -7,7 +7,7 @@
             "marks": ["discord"],
             "swallows": [
                 {
-                    "class": "^Discord$"
+                    "class": "^discord$"
                 }
             ]
         },
