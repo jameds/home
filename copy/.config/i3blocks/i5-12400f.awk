@@ -1,6 +1,6 @@
 /Package id 0/ {
 	t = +$2
-	if (t < 40)
+	if (t < 50)
 		color = "#060"
 	else if (t < 70)
 		color = "#a80"

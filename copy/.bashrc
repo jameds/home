@@ -9,6 +9,10 @@ umask 027
 [[ $- != *i* ]] && return
 
 . <(cat ~/sh/rc/*)
+eval "$(~/.local/bin/mise activate bash)"
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+shopt -s dotglob # let me glob dot files!
 
 export EDITOR=vim
 export LC_COLLATE=C # makes ls sort by codepoint

@@ -1,1 +1,3 @@
---format=bv*[height<=1080]+ba/b[height<=1080]/w
+--format='bv*[height<=1080]+ba/b[height<=1080]/w'
+--embed-metadata
+--output='%(title)s-%(id)s.%(ext)s'
