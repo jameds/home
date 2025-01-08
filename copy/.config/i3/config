@@ -112,5 +112,6 @@ bar {
 #
 exec dex -ae i3
 exec_always i3-focus-last server
+exec dunst
 exec ~/sh/xinit-xset.sh
 exec ~/.config/i3/get-layout.sh
