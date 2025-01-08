@@ -17,6 +17,9 @@
 + /.config/mpv/input.conf
 + /.config/yt-dlp/***
 + /.config/dunst/***
++ /.config/systemd/
+- /.config/systemd/user/private-*
++ /.config/systemd/user/***
 + /.config/user-dirs.dirs
 + /.Xresources
 + /.xinitrc
