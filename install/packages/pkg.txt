@@ -1,5 +1,6 @@
 appstream-glib
 aria2
+at
 babl
 base
 base-devel
@@ -9,6 +10,7 @@ cmake
 ctags
 dex
 dmenu
+dunst
 efibootmgr
 exiv2
 firefox
@@ -29,11 +31,13 @@ man-db
 man-pages
 mariadb-clients
 meson
+moreutils
 mpv
 mypaint-brushes1
 ninja
 noto-fonts
 noto-fonts-cjk
+openbsd-netcat
 openssh
 pass
 pass-otp
