@@ -58,8 +58,6 @@ autocmd FileType toml setl sts=-1 et ts=2 ai
 syntax on
 set background=light
 set t_Co=256
-" https://www.shallowsky.com/linux/noaltscreen.html
-set t_ti= t_te=
 hi Visual cterm=reverse ctermbg=NONE ctermfg=NONE
 hi ColorColumn ctermbg=174
 hi Todo ctermbg=NONE ctermfg=4 cterm=reverse
