@@ -2,6 +2,5 @@
 
 xrdb ~/.Xresources
 xrandr --output HDMI-0 --mode 1920x1080
-urxvtd -q -o -f
 
 exec i3
