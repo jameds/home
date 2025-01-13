@@ -1,0 +1,6 @@
+[init]
+	templatedir = ~/.git_template
+	defaultBranch = master
+[user]
+	email = justsomejames2@gmail.com
+	name = James R

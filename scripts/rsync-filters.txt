@@ -18,6 +18,7 @@
 + /.xinitrc
 + /.bashrc
 + /.vimrc
++ /.screenrc
 + /sh/***
 + /data/
 + /data/dpad.Xmodmap
