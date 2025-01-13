@@ -1,0 +1,9 @@
+[Unit]
+Description=Grocery app backend server
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'cd ~/proj/grocery/backend && ~/.local/bin/mise exec node@23 -- node --env-file ~/data/grocery.env app.js'
+
+[Install]
+WantedBy=default.target

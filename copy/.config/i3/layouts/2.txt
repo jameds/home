@@ -1,2 +1,2 @@
 exec firefox
-exec vterm.sh
+exec ~/.config/i3/vterm.py

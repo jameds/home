@@ -4,6 +4,7 @@
 call plug#begin()
 Plug 'vim-scripts/a.vim'
 Plug 'tpope/vim-eunuch'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
@@ -39,12 +40,16 @@ set backupdir=/tmp
 " Restore defaults before filetype switches
 autocmd FileType * setl tw< ts< sts< et<
 " No text wrapping in config files
-autocmd FileType vim,conf,json,jsonc,text,i3config,dosini,systemd,cfg,toml setl tw=0
+autocmd FileType vim,conf,json,jsonc,text,i3config,dosini,systemd,cfg,toml,html,css setl tw=0
 autocmd BufNewFile,BufRead */PKGBUILD setl tw=0
 " Bigger tabs in text files
 autocmd FileType text setl ts=8
 " Some files should use spaces instead of tabs
-autocmd FileType json,jsonc setl sts=-1 et ts=4
+autocmd FileType json,jsonc,python,nginx setl sts=-1 et
+" 2 space indent in web dev
+autocmd FileType html,css,javascript* setl sts=-1 et ts=2
+" vim-toml does not provide automatic indenting, so make it a little easier to type manually
+autocmd FileType toml setl sts=-1 et ts=2 ai
 
 
 "
@@ -53,9 +58,11 @@ autocmd FileType json,jsonc setl sts=-1 et ts=4
 syntax on
 set background=light
 set t_Co=256
+" https://www.shallowsky.com/linux/noaltscreen.html
+set t_ti= t_te=
 hi Visual cterm=reverse ctermbg=NONE ctermfg=NONE
 hi ColorColumn ctermbg=174
-hi Todo ctermbg=13
+hi Todo ctermbg=NONE ctermfg=4 cterm=reverse
 
 
 "

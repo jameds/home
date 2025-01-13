@@ -1,0 +1,40 @@
+[window]
+padding = { x = 4, y = 0 }
+
+[font]
+normal = { family = "Source Code Pro Semibold", style = "Regular" }
+size = 14.5
+
+[colors.primary]
+background = "#bcada9"
+foreground = "#000000"
+
+[colors.cursor]
+cursor     = "#000000"
+text       = "#cdbeba"
+
+[colors.normal]
+black      = "#000000"
+red        = "#900000"
+green      = "#006400"
+yellow     = "#a05f2d"
+blue       = "#191970"
+magenta    = "#ab008b"
+cyan       = "#006a6e"
+white      = "#c1b3af"
+
+[colors.bright]
+black      = "#57606d"
+red        = "#b00000"
+green      = "#7fff4f"
+yellow     = "#ffe700"
+blue       = "#4169e1"
+magenta    = "#f000b0"
+cyan       = "#50fff5"
+white      = "#ffffff"
+
+[keyboard]
+bindings = [
+  { key = 'C', mods = "Control | Alt", action = "Copy" },
+  { key = 'V', mods = "Control | Alt", action = "Paste" },
+]
