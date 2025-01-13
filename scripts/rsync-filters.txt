@@ -1,12 +1,4 @@
 + /.config/
-+ /.config/GIMP/
-+ /.config/GIMP/*/
-+ /.config/GIMP/*/dynamics/***
-+ /.config/GIMP/*/gimprc
-+ /.config/GIMP/*/modifiersrc
-+ /.config/GIMP/*/sessionrc
-+ /.config/GIMP/*/shortcutsrc
-+ /.config/GIMP/*/toolrc
 + /.config/git/***
 + /.config/i3/***
 + /.config/i3blocks/***
@@ -21,6 +13,7 @@
 - /.config/systemd/user/private-*
 + /.config/systemd/user/***
 + /.config/user-dirs.dirs
++ /.config/alacritty/***
 + /.Xresources
 + /.xinitrc
 + /.bashrc

@@ -6,6 +6,8 @@ https://github.com/passff/passff?tab=readme-ov-file
 https://github.com/passff/passff-host?tab=readme-ov-file#installation
 https://github.com/alesar1/play-with-mpv
 https://aur.archlinux.org/packages/play-with-mpv-git
+https://github.com/gifnksm/youtube_thumbnail_viewer?tab=readme-ov-file#youtube-thumbnail-viewer
+https://addons.mozilla.org/en-US/firefox/addon/react-devtools/
 
 Remember to restart Firefox for passff-host to take effect.
 

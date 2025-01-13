@@ -1,0 +1,8 @@
++ /3.0/
++ /3.0/dynamics/***
++ /3.0/gimprc
++ /3.0/modifiersrc
++ /3.0/sessionrc
++ /3.0/shortcutsrc
++ /3.0/toolrc
+- /**

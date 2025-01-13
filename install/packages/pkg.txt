@@ -1,3 +1,4 @@
+alacritty
 appstream-glib
 aria2
 at
@@ -51,7 +52,6 @@ python
 python-pip
 radeontop
 rsync
-rxvt-unicode
 screen
 scrot
 smartmontools
