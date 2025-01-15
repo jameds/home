@@ -1,2 +1,0 @@
-exec discord-canary
-exec ~/.config/i3/vterm.py

@@ -1,0 +1,11 @@
+[Unit]
+Description=Create extra user dirs for XDG
+Before=xdg-user-dirs-update.service
+After=tmp.mount
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'mkdir -p /tmp/dl'
+
+[Install]
+WantedBy=default.target

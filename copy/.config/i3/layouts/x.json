@@ -16,7 +16,7 @@
             "marks": ["music"],
             "swallows": [
                 {
-                    "class": "^URxvt$",
+                    "class": "^Alacritty$",
                     "instance": "^music$"
                 }
             ]

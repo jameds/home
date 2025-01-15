@@ -13,6 +13,7 @@ BEGIN {
 	{
 		print "workspace " $2
 		print "append_layout " Layouts $1 ".json"
-		system("cat " Layouts $1 ".txt")
+		print "exec sh -c 'WORKSPACE=" $2 \
+			  " " Layouts $1 ".sh'"
 	}
 }

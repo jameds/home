@@ -6,7 +6,7 @@
             "type": "con",
             "swallows": [
                 {
-                    "class": "^URxvt$"
+                    "class": "^Alacritty$"
                 }
             ]
         },
