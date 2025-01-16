@@ -14,6 +14,9 @@
 + /.config/systemd/user/***
 + /.config/user-dirs.dirs
 + /.config/alacritty/***
++ /.config/OpenTabletDriver/
++ /.config/OpenTabletDriver/Plugins/***
++ /.config/OpenTabletDriver/Presets/***
 + /.xkb/***
 + /.Xresources
 + /.xinitrc
