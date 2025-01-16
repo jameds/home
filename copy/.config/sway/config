@@ -1,4 +1,14 @@
-# vim: ft=i3config
+#
+# Devices
+#
+input "type:keyboard" {
+	repeat_delay 225
+	repeat_rate 25
+}
+
+output "HDMI-A-1" {
+	mode 1920x1080@60Hz
+}
 
 #
 # Font
@@ -16,7 +26,7 @@ floating_modifier $m
 #
 # Workspaces
 #
-include ~/.config/i3/workspaces.conf
+include ~/.config/sway/workspaces.conf
 
 #
 # Window borders
@@ -37,9 +47,9 @@ focus_on_window_activation urgent
 #
 # Focus application
 #
-bindsym $m+m exec ~/.config/i3/mark.sh 'mark %s' -p 'MARK> ' -fn $dmenu_font_big
-bindsym $m+Shift+m exec ~/.config/i3/unmark.sh
-bindsym $m+slash exec ~/.config/i3/mark.sh '[con_mark="%s"] focus' -p 'GOTO> ' -fn $dmenu_font_big
+bindsym $m+m exec ~/.config/sway/mark.sh 'mark %s' -p 'MARK> ' -fn $dmenu_font_big
+bindsym $m+Shift+m exec ~/.config/sway/unmark.sh
+bindsym $m+slash exec ~/.config/sway/mark.sh '[con_mark="%s"] focus' -p 'GOTO> ' -fn $dmenu_font_big
 
 #
 # Navigation commands
@@ -69,22 +79,22 @@ bindsym $m+semicolon focus right
 bindsym $m+grave floating toggle
 bindsym $m+f   fullscreen toggle
 
-bindsym $m+Shift+j     move  left  5 ppt
-bindsym $m+Shift+k     move  down  5 ppt
-bindsym $m+Shift+l     move  up    5 ppt
-bindsym $m+Shift+colon move  right 5 ppt
+bindsym $m+Shift+j         move  left  96
+bindsym $m+Shift+k         move  down  96
+bindsym $m+Shift+l         move  up    96
+bindsym $m+Shift+semicolon move  right 96
 
 #
 # Resize mode
 #
 set $d_resize "Resize"
-set $rs_px 90
+set $rs_px 90 px
 mode $d_resize {
-	bindsym semicolon resize shrink left $rs_px; resize shrink right $rs_px
-	bindsym j         resize grow left $rs_px; resize grow right $rs_px
+	bindsym semicolon resize shrink width $rs_px
+	bindsym j         resize grow width $rs_px
 
-	bindsym l         resize shrink up $rs_px; resize shrink down $rs_px
-	bindsym k         resize grow up $rs_px; resize grow down $rs_px
+	bindsym l         resize shrink height $rs_px
+	bindsym k         resize grow height $rs_px
 
 	bindsym Escape mode default
 }
@@ -93,7 +103,7 @@ bindsym $m+s mode $d_resize
 #
 # Per application settings and launcher
 #
-include ~/.config/i3/apps.conf
+include ~/.config/sway/apps.conf
 
 #
 # Status bar
@@ -112,8 +122,8 @@ bar {
 #
 # Autostart
 #
-exec dex -ae i3
+exec dex -ae sway
 exec_always i3-focus-last server
 exec dunst
-exec ~/sh/xinit-xset.sh
-exec ~/.config/i3/get-layout.sh
+exec otd-daemon
+exec ~/.config/sway/get-layout.sh

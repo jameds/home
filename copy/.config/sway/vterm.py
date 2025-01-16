@@ -3,11 +3,13 @@
 import json
 import os
 import subprocess
+import sys
 
-focused = os.environ.get('WORKSPACE')
-if not focused:
+if len(sys.argv) > 1:
+    focused = sys.argv[1]
+else:
     workspaces = json.loads(subprocess.check_output([
-        'i3-msg', '-t', 'get_workspaces']))
+        'swaymsg', '-t', 'get_workspaces']))
 
     focused = next(w for w in workspaces
                    if w['focused'])['name']

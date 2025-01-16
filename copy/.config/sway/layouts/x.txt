@@ -1,0 +1,2 @@
+exec discord-canary
+exec ~/.config/sway/vterm.py $wx

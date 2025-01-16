@@ -40,7 +40,7 @@ set backupdir=/tmp
 " Restore defaults before filetype switches
 autocmd FileType * setl tw< ts< sts< et<
 " No text wrapping in config files
-autocmd FileType vim,conf,json,jsonc,text,i3config,dosini,systemd,cfg,toml,html,css setl tw=0
+autocmd FileType vim,conf,json,jsonc,text,i3config,dosini,systemd,cfg,toml,html,css,swayconfig setl tw=0
 autocmd BufNewFile,BufRead */PKGBUILD setl tw=0
 " Bigger tabs in text files
 autocmd FileType text setl ts=8

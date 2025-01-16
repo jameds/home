@@ -1,6 +1,6 @@
 + /.config/
 + /.config/git/***
-+ /.config/i3/***
++ /.config/sway/***
 + /.config/i3blocks/***
 + /.config/mpv/
 + /.config/mpv/scripts/***

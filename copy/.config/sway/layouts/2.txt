@@ -1,0 +1,2 @@
+exec firefox
+exec ~/.config/sway/vterm.py $w2

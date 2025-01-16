@@ -1,7 +1,7 @@
 xc() {
 	if [ -t 0 ]; then
-		xclip -sel c -o | awk 1
+		wl-paste -n | awk 1
 	else
-		xclip -sel c -i
+		wl-copy -n
 	fi
 }

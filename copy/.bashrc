@@ -19,7 +19,7 @@ export LC_COLLATE=C # makes ls sort by codepoint
 
 export PS1='\[\e[37;40m\]\u@\h \w\[\e[0m\]\n'
 
-[ "$(tty)" = /dev/tty3 ] && exec startx &> ~/.Xlog
+[ "$(tty)" = /dev/tty3 ] && exec sway --unsupported-gpu &> ~/.Xlog
 
 # For some reason, less command turns highlights into
 # italics when TERM=screen. xterm works.
