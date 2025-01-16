@@ -1,0 +1,1 @@
+Add user to seat group. This allows TTY switching.
