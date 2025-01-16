@@ -1,9 +1,9 @@
 #!/bin/sh
 case "$1" in
 	1)
-		setxkbmap -layout us
+		swaymsg -q 'input type:keyboard xkb_layout us'
 		;;
 	*)
-		xmodmap ~/data/dpad.Xmodmap
+		swaymsg -q 'input type:keyboard xkb_layout dpad'
 		;;
 esac

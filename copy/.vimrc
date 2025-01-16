@@ -45,7 +45,7 @@ autocmd BufNewFile,BufRead */PKGBUILD setl tw=0
 " Bigger tabs in text files
 autocmd FileType text setl ts=8
 " Some files should use spaces instead of tabs
-autocmd FileType json,jsonc,python,nginx setl sts=-1 et
+autocmd FileType json,jsonc,python,nginx,xkb setl sts=-1 et
 " 2 space indent in web dev
 autocmd FileType html,css,javascript* setl sts=-1 et ts=2
 " vim-toml does not provide automatic indenting, so make it a little easier to type manually

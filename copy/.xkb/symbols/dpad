@@ -1,0 +1,13 @@
+// vim: ft=xkb
+
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+    include "us(basic)"
+
+    name[Group1]= "English (US) (D-Pad)";
+
+    replace key <AD07> { [ Up ] };
+    replace key <AC06> { [ Left ] };
+    replace key <AC07> { [ Down ] };
+    replace key <AC08> { [ Right ] };
+};
