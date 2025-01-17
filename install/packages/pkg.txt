@@ -67,6 +67,7 @@ wine
 wine-mono
 wireplumber
 wl-clipboard
+xdg-desktop-portal-wlr
 xf86-input-wacom
 xorg-xwayland
 yt-dlp

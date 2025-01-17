@@ -1,2 +1,2 @@
-exec discord-canary
+exec vesktop
 exec ~/.config/sway/vterm.py $wx

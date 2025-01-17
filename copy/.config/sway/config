@@ -1,3 +1,5 @@
+include /etc/sway/config.d/*
+
 #
 # Devices
 #
@@ -126,4 +128,5 @@ exec dex -ae sway
 exec_always i3-focus-last server
 exec dunst
 exec otd-daemon
+exec systemctl --user start xdg-desktop-portal-wlr.service
 exec ~/.config/sway/get-layout.sh

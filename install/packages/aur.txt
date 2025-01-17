@@ -1,9 +1,9 @@
 bdf-unifont
-discord-canary
 gegl-git
 i3-focus-last-git
 opentabletdriver
 simplescreenrecorder
 ttf-twemoji
 ttf-unifont
+vesktop-bin
 yaah
