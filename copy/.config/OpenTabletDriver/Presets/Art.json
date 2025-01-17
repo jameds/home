@@ -7,7 +7,22 @@
         "Settings": [],
         "Enable": true
       },
-      "Filters": [],
+      "Filters": [
+        {
+          "Path": "Flip_Axes.Flip_Area_Axes",
+          "Settings": [
+            {
+              "Property": "Flip_X",
+              "Value": null
+            },
+            {
+              "Property": "Flip_Y",
+              "Value": null
+            }
+          ],
+          "Enable": false
+        }
+      ],
       "AbsoluteModeSettings": {
         "Display": {
           "Width": 1920.0,
@@ -49,21 +64,21 @@
         "EraserButton": null,
         "PenButtons": [
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.LinuxArtistMode.LinuxArtistModeButtonBinding",
             "Settings": [
               {
                 "Property": "Button",
-                "Value": "Middle"
+                "Value": "Pen Button 1"
               }
             ],
             "Enable": true
           },
           {
-            "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+            "Path": "OpenTabletDriver.Desktop.Binding.LinuxArtistMode.LinuxArtistModeButtonBinding",
             "Settings": [
               {
                 "Property": "Button",
-                "Value": "Right"
+                "Value": "Pen Button 2"
               }
             ],
             "Enable": true

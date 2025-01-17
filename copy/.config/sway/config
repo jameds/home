@@ -56,7 +56,7 @@ bindsym $m+slash exec ~/.config/sway/mark.sh '[con_mark="%s"] focus' -p 'GOTO> '
 #
 bindsym $m+r       reload
 bindsym $m+Shift+r restart
-bindsym $m+Escape  exec --no-startup-id slock
+bindsym $m+Escape  exec --no-startup-id swaylock -c '#000000'
 
 bindsym $m+Shift+q kill
 
