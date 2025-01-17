@@ -17,6 +17,7 @@ exiv2
 firefox
 git
 glib2-devel
+grim
 grub
 gtk2
 gvim
@@ -52,7 +53,7 @@ python-pip
 radeontop
 rsync
 screen
-scrot
+slurp
 smartmontools
 sshpass
 sway
