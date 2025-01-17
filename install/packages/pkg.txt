@@ -62,6 +62,7 @@ tree
 unzip
 vsftpd
 wayland
+wayland-protocols
 wine
 wine-mono
 wireplumber
