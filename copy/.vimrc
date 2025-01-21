@@ -5,6 +5,8 @@ call plug#begin()
 Plug 'vim-scripts/a.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'sheerun/vim-polyglot'
+Plug 'jasonccox/vim-wayland-clipboard'
+Plug 'habamax/vim-godot'
 call plug#end()
 
 

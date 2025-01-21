@@ -7,6 +7,7 @@ base
 base-devel
 bash-completion
 bc
+btrfs-progs
 cmake
 ctags
 dex
@@ -25,6 +26,7 @@ i3blocks
 iwd
 jq
 lftp
+libnotify
 linux
 linux-firmware
 lvm2

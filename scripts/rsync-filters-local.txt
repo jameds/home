@@ -1,0 +1,15 @@
+- /*/.cache
+- /*/.cargo/registry
+- /*/.config/vesktop
+- /*/.local/share/NuGet
+- /*/.local/share/Steam
+- /*/.local/share/mise
+- /*/.local/share/pnpm
+- /*/.npm
+- /*/.nuget
+- /*/.rustup
+- /*/.screen
+- /*/.steam
+- node_modules
+- .venv
+dir-merge .rsync-filter
