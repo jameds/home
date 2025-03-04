@@ -1,0 +1,9 @@
+[Unit]
+Description=Remind me to run backups weekly
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -lc '. ~/.bashrc && alarm 0 "WEEKLY BACKUPS, run ~/doc/recovery/backup.sh media-b"'
+
+[Install]
+WantedBy=default.target

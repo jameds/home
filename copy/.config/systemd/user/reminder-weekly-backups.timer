@@ -1,0 +1,10 @@
+[Unit]
+Description=Monthly Timer for reminder-weekly-backups.service
+
+[Timer]
+OnCalendar=Sun *-*-* 00:00:00
+Persistent=true
+Unit=reminder-weekly-backups.service
+
+[Install]
+WantedBy=default.target
